@@ -1,0 +1,197 @@
+body {
+    background-color: #f8f9fa;
+    font-family: Arial, sans-serif;
+    display: flex;
+    flex-direction: column;
+    min-height: 100vh;
+    margin: 0;
+}
+
+/*Estilizado o contêiner principal do jogo */
+.container {
+    background-color: #ffffff;
+    border-radius: 8px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    padding: 20px;
+    max-width: 45%;
+    width: 45%;
+    margin: 20px auto;
+    box-sizing: border-box;
+}
+
+/*Estlizando a dica */
+#dica {
+    color:#6c757d;
+    margin-bottom: 20px;
+}
+
+/* Estilizando a palavra a ser adivinhada */
+#palavra {
+    color:#343a40;
+    font-weight: bold;
+    letter-spacing: 2px;
+    margin-bottom: 20px;
+}
+
+/* Estilizando o campo de entrada */
+#guess {
+    width: 100%;
+    padding: 10px;
+    margin-bottom: 20px;
+    box-sizing: border-box;
+}
+
+/* Alinhando e centralizando os botões */
+.botoes {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 10px;
+    flex-wrap: wrap;
+}
+
+/* Estilizando os botões */
+.btn {
+    padding: 10px 20px;
+    font-size: 16px;
+    border-radius: 4px;
+    border: none;
+    cursor: pointer;
+    text-align: center;
+    flex: 1 1 150px;
+    max-width: 200px;
+}
+
+.btn-primary {
+    background-color: #007bff;
+    color: white;
+}
+
+.btn-primary:hover {
+    background-color: #0056b3;
+}
+
+.btn-secondary {
+    background-color: #6c757d;
+    color: white;
+}
+
+.btn-secondary:hover {
+    background-color: #5a6268;
+}
+
+/* Espacamento para o status e Letras tentadas */
+#status,
+#attempts {
+    font-size: 1.1em;
+    color:#495057;
+    margin-top: 20px;
+}
+
+/* Estilizando a área da força */
+#forca {
+    width: 150px;
+    height: 250px;
+    margin: 20px auto;
+    position: relative;
+}
+
+#forca div {
+    background-color: blue;
+    position: absolute;
+}
+
+/* Estilizando o rodapé (footer) */
+footer {
+    background-color: #005caa;
+    color: #fff;
+    padding: 15px 0;
+    font-size: 18px;
+    text-align: center;
+    margin-top: auto;
+    line-height: 1.6;
+    width: 100%;
+}
+
+/* Estilizando o cabeçalho (header) */
+header {
+    background-color: #005caa;
+    color: #fff;
+    padding: 15px 0;
+    text-align: center;
+    margin-bottom: 20px;
+}
+
+/* Ajustando a imagem da Logo no cabeçalho */
+img.Senai-logo {
+    max-width: 20%;
+    height: auto;
+    display: block;
+    margin: 0 auto;
+}
+
+/* Estilo para display-4 */
+.display-4 {
+    font-size: 2.5rem; /*Tamanha da fonte para telas maiores*/
+    font-weight: 300;
+    line-height: 1.2;
+}
+
+/* Media Queires para telas maiores */
+@media (max-width: 768px) {
+    .container {
+        width: 90%;
+        padding: 15px;
+    }
+.btn {
+    flex: 1 1 100%; /*Botões ocupam toda a Largura disponível */
+    max-width: none; /*Remove a Largura máxima */
+    margin-bottom: 10px; /*Escapámento inferior entre botões empilhados */
+}
+
+#forca {
+    width: 120px;
+    height: 200px;
+}
+
+footer,
+header {
+    padding: 10px 0;
+    font-size: 16px;
+}
+
+img.senai-logo {
+    max-width: 30%;
+}
+
+.display-4 {
+    font-size: 2rem; /*Ajuste para tabletes e diepositivos intermediários */
+    }
+}
+
+@media (max-width: 480px) {
+    .container {
+        width: 95%;
+        padding: 10px;
+    }
+    #forca {
+        width: 100px;
+        height: 180px;
+    }
+    .btn {
+        font-size: 14px;
+        padding: 8px 16px;
+    }
+
+    footer, 
+    header {
+        font-size: 14px;
+    }
+    img.senai-logo {
+        max-width: 40%;
+    }
+
+    .display-4 {
+        font-size: 1.5; /* Ajuste para dispositivos móveis */
+    }
+}
