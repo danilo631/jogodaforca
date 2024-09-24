@@ -1,14 +1,14 @@
 const palavras = [
 
     "nautilus",
-    "capitáo nemo",
+    "capitao nemo",
     "aronnax",
     "ned land",
     "oceano",
     "lula gigante",
-    "atlântida",
+    "atlantida",
     "jules verne",
-    "ciência",
+    "ciencia",
     "recifes de corais",
     "esmeralda",
     "pólvora",
